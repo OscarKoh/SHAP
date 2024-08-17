@@ -1,4 +1,14 @@
 import streamlit as st
+import importlib.util
+
+if importlib.util.find_spec("shap") is None:
+    st.error("SHAP library is not installed!")
+else:
+    import shap
+    st.success(f"SHAP version: {shap.__version__}")
+
+
+import streamlit as st
 import shap
 import pandas as pd
 import numpy as np
