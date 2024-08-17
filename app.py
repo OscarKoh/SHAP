@@ -1,12 +1,3 @@
-import subprocess
-import sys
-
-try:
-    import shap
-except ImportError:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "shap"])
-    import shap
-    
 import streamlit as st
 import shap
 import pandas as pd
