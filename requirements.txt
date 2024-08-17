@@ -3,5 +3,5 @@ pandas
 numpy
 scikit-learn
 matplotlib
-shap==0.42
+shap==0.41.0
 streamlit-shap
